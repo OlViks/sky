@@ -8,6 +8,7 @@ public class Truck extends Transport implements Competing{
     }
 
     @Override
+
     public void startMovement() {
         System.out.printf("Грузовик %s %s начать движение", this.getBrand(), this.getModel());
     }

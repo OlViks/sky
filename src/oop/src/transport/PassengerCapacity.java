@@ -15,6 +15,7 @@ public enum PassengerCapacity {
         CapacityTo = capacityTo;
     }
 
+
     @Override
     public String toString() {
         return "Вместимость : " +

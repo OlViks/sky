@@ -8,6 +8,7 @@ public class Car extends Transport implements Competing {
         this.bodyType = bodyType;
     }
 
+
     @Override
     public void startMovement() {
         System.out.printf("Машина %s %s начать движение", this.getBrand(), this.getModel());

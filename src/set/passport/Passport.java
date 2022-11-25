@@ -27,6 +27,7 @@ public class Passport {
         } else {
             System.out.println("Укажите имя.");
         }
+
         this.middleName = middleName;
         this.localDate = localDate;
     }
