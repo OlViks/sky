@@ -1,6 +1,6 @@
 package pro.sky.java.src.oop.src.transport;
 
-public class Mechanic<T extends Transport> {
+public class  Mechanic<T extends Transport> {
 
 
     public final String name;
