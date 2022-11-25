@@ -6,6 +6,7 @@ public abstract class Driver<T extends Transport> {
     private final String fullName;
     private final String driverLicence;
     private String category;
+
     private final T car;
 
     protected Driver(String fullName, String driverLicence, String category, T car) {

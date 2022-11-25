@@ -44,6 +44,7 @@ public class Recipe {
         return Objects.equals(name, recipe.name);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(name);

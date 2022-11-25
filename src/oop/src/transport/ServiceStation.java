@@ -16,6 +16,7 @@ public class  ServiceStation {
         add(truck);
     }
 
+
     public void service() {
         if (!transports.isEmpty()) {
             Transport transport = transports.poll();

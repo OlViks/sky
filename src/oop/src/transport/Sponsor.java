@@ -11,6 +11,7 @@ public class Sponsor {
         this.amount = amount;
     }
 
+
     public String getName() {
         return name;
     }

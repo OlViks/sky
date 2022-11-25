@@ -7,6 +7,7 @@ public class Bus extends Transport implements Competing {
         this.passengerCapacity = passengerCapacity;
     }
 
+
     @Override
     public void startMovement() {
         System.out.printf("Автобус %s %s начать движение", this.getBrand(), this.getModel());
