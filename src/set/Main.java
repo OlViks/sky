@@ -62,6 +62,7 @@ public class Main {
         System.out.println(phone.get("Ольга Ольгавна"));
 
         System.out.println();
+        System.out.println();
 
 
         HashMap<String, List<Integer>> map = new HashMap<>();
