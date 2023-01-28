@@ -22,6 +22,7 @@ public class Product {
         this.boughtCheck = false;
     }
 
+
     public boolean isBoughtCheck() {
         return boughtCheck;
     }

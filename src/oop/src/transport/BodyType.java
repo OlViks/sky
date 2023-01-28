@@ -2,6 +2,7 @@ package pro.sky.java.src.oop.src.transport;
 
 
 public enum BodyType { SEDAN("Седан"),
+
     HATCHBACK("Хетчбек"),
     COUPE("Купе"),
     UNIVERSAL("Универсал"),

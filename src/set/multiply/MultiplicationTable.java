@@ -15,6 +15,7 @@ public class MultiplicationTable {
         }
     }
 
+
     @Override
     public String toString() {
         return "Таблица умножения\n" +

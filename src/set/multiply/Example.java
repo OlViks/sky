@@ -13,6 +13,7 @@ public class Example {
         this.number2 = number2;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -7,6 +7,7 @@ public class  Mechanic<T extends Transport> {
     public final String surname;
     public final String company;
 
+
     public Mechanic(String name, String surname, String company) {
         this.name = name;
         this.surname = surname;

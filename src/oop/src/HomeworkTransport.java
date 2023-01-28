@@ -12,6 +12,7 @@ public class HomeworkTransport {
 
     public static class Main {
 
+
         public static void main(String[] args) {
 
             Sponsor nokian = new Sponsor("Nokian", 10_000_000);
