@@ -9,29 +9,24 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
+        HashMap<Product, Integer> productList = new HashMap<>();
         Product bread = new Product("Хлеб", 30.2f, 2);
         Product milk = new Product("Молоко", 50, 1);
-//        ProductList productList = new ProductList();
-//        productList.addProducts(bread);
-//        productList.addProducts(milk);
-//        System.out.println(productList);
-//        bread.setBoughtCheck();
-//        System.out.println(productList);
-
-//        Recipe milkBread2 = new Recipe("молочный хлеб", Set.of(bread, milk));
-
+        productList.put(milk, 1);
+        productList.put(bread, 1);
+        System.out.println(productList);
+        bread.setBoughtCheck();
+        milk.setBoughtCheck();
+        System.out.println(productList);
         Map<Product, Integer> list = new HashMap<>();
-        list.put(bread,2);
-        list.put(milk,1);
+        list.put(bread, 2);
+        list.put(milk, 1);
         RecipeList recipeList = new RecipeList();
         Recipe milkBread = new Recipe("Молочный хлеб", Set.of(bread, milk));
-
         recipeList.addRecipe(milkBread);
         System.out.println(recipeList);
 //        System.out.println(milkBread.getRecipePrice());
-
 //        recipeList.addRecipe(milkBread2);
-
 //        Product milk2 = new Product("Молоко", 100, 2);
 //        productList.addProducts(milk2);
 //        System.out.println(productList);
@@ -59,9 +54,9 @@ public class Main {
         phone.put("Ульяна Ульянова", "8-921-321-48-87");
 
 
-
         System.out.println(phone.values());
         System.out.println(phone.get("Ольга Ольгавна"));
+        System.out.println(phone.get("Сегрей Сергеев"));
 
         System.out.println();
         System.out.println();
@@ -70,32 +65,24 @@ public class Main {
         HashMap<String, List<Integer>> map = new HashMap<>();
         HashMap<String, Integer> listMap = new HashMap<>();
         ArrayList<ArrayList<Integer>> list1 = new ArrayList<>(4);
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             list1.add(new ArrayList<>());
-            list1.get(i).add((int) (Math.random() * 1000));
-            list1.get(i).add((int) (Math.random() * 1000));
-            list1.get(i).add((int) (Math.random() * 1000));
-            map.put("str" + Integer.toString(i), list1.get(i));
-            System.out.println("str" + Integer.toString(i) + "->" + list1.get(i));
-            listMap.put("str" + Integer.toString(i), list1.get(i).get(0) +
+            list1.get(i).add((int) (Math.random() * 10));
+            list1.get(i).add((int) (Math.random() * 10));
+            list1.get(i).add((int) (Math.random() * 10));
+            map.put("str" + i, list1.get(i));
+            System.out.println("str" + "->" + list1.get(i));
+            listMap.put("str" + i, list1.get(i).get(0) +
                     list1.get(i).get(1) + list1.get(i).get(2));
         }
-        for (int i = 0; i < 5; i++) {
-            System.out.println("str" + Integer.toString(i) + "->" + listMap.get("str"
-                    + Integer.toString(i)));
+        for (int i = 0; i < 3; i++) {
+            System.out.println("str" + i + "->" + listMap.get("str"
+                    + i));
         }
 
 
         System.out.println();
 
-        HashMap<Integer, String> integerStringHashMap = new HashMap<>();
-        for (int i = 1; i < 10; i++) {
-            integerStringHashMap.put(i, "str" + Integer.toString(i));
-        }
-        for (int i = 1; i < 10; i++) {
-            System.out.println(" " + integerStringHashMap.get(i));
-        }
 
     }
-
 }
